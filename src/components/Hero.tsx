@@ -7,15 +7,15 @@ export default function Hero({ isDark }: { isDark: boolean }) {
   return (
     <section className={`min-h-screen flex items-center justify-center relative overflow-hidden pt-16 ${isDark ? 'bg-black text-white' : 'bg-white text-black'}`}>
       <div className={`absolute inset-0 ${isDark ? 'bg-black' : 'bg-white'}`}></div>
-      
-      <motion.div 
+
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         className="container mx-auto px-4 relative z-10"
       >
         <div className="max-w-4xl mx-auto text-center">
-          <GlitchText 
+          <GlitchText
             text="Priyanshu Verma "
             className="text-5xl md:text-7xl font-bold mb-6"
           />
@@ -35,37 +35,37 @@ export default function Hero({ isDark }: { isDark: boolean }) {
               }}
             />
           </div>
-          
-          <motion.p 
+
+          <motion.p
             className={`text-xl ${isDark ? 'text-gray-400' : 'text-gray-600'} mb-8 max-w-2xl mx-auto`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            With over 8 years of experience in cloud architecture and DevOps, I specialize in building scalable infrastructure and automating deployment pipelines. Passionate about containerization, microservices, and cloud-native technologies.
+            With over 2 years of experience in cloud architecture and DevOps, I specialize in building scalable infrastructure and automating deployment pipelines. Passionate about containerization, microservices, and cloud-native technologies.
           </motion.p>
 
-          <motion.div 
+          <motion.div
             className="flex justify-center gap-8 mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
           >
-            <motion.div 
+            <motion.div
               className="flex flex-col items-center"
               whileHover={{ scale: 1.1, rotate: 5 }}
             >
               <Terminal className={`w-12 h-12 ${isDark ? 'text-gray-400' : 'text-gray-600'} mb-2`} />
               <span className={isDark ? 'text-gray-400' : 'text-gray-600'}>DevOps</span>
             </motion.div>
-            <motion.div 
+            <motion.div
               className="flex flex-col items-center"
               whileHover={{ scale: 1.1, rotate: -5 }}
             >
               <Cloud className={`w-12 h-12 ${isDark ? 'text-gray-400' : 'text-gray-600'} mb-2`} />
               <span className={isDark ? 'text-gray-400' : 'text-gray-600'}>Cloud</span>
             </motion.div>
-            <motion.div 
+            <motion.div
               className="flex flex-col items-center"
               whileHover={{ scale: 1.1, rotate: 5 }}
             >
